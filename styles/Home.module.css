@@ -8,6 +8,7 @@
   background: #272522;
   height: 100vh;
   width: 145px;
+  cursor: pointer;
 }
 
 .rightSidebar {

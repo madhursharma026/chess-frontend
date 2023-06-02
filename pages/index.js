@@ -1,5 +1,16 @@
-import styles from '@/styles/Home.module.css'
 import Link from 'next/link'
+import styles from '@/styles/Home.module.css'
+import logo from './media/logo.png';
+import logo2 from './media/logo-2.png';
+import img1 from './media/img-1.png';
+import img2 from './media/img-2.png';
+import img3 from './media/img-3.png';
+import img4 from './media/img-4.jpg';
+import img5 from './media/img-5.jpg';
+import img6 from './media/img-6.png';
+import img7 from './media/img-7.png';
+import img8 from './media/img-8.jpg';
+import img9 from './media/img-9.png';
 
 export default function Home() {
   return (
@@ -10,7 +21,7 @@ export default function Home() {
             <div class="container-fluid">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" style={{ border: '0' }}>
                 <span class="navbar-toggler-icon"></span>
-                <img src="https://images.chesscomfiles.com/uploads/v1/images_users/tiny_mce/SamCopeland/phpZA7QOK.png" alt="#ImgNotFound" width='100px' />
+                <img src={logo.src} alt="#ImgNotFound" width='100px' />
               </button>
               <div class="d-flex">
                 <button type="button" class="btn mx-2" style={{ background: '#4A4846', color: 'white', fontWeight: '700' }}>Sign Up</button>
@@ -21,8 +32,8 @@ export default function Home() {
         </div>
         <div className={styles.leftSidebar} style={{ position: 'fixed' }}>
           <div className="p-xl-3 pt-2">
-            <img src="https://www.chess.com/bundles/web/images/brand/chesscom_pawn.b51896bf.png" alt="#ImgNotFound" width='40px' height='40px' className={styles.showAfterXLScrn} />
-            <img src="https://images.chesscomfiles.com/uploads/v1/images_users/tiny_mce/SamCopeland/phpZA7QOK.png" alt="#ImgNotFound" width='100%' className={styles.hideAfterXLScrn} />
+            <img src={logo2.src} alt="#ImgNotFound" width='40px' height='40px' className={styles.showAfterXLScrn} />
+            <img src={logo.src} alt="#ImgNotFound" width='100%' className={styles.hideAfterXLScrn} />
           </div>
           <ul class="list-group">
             <li class="list-group-item leftSideOptions px-xl-3 p-2" style={{ background: '#272522', color: 'white', border: '0', fontWeight: '700', fontSize: '20px' }}>♟️ <span className={`${styles.hideAfterXLScrn} ${styles.optionsText}`}>Play</span></li>
@@ -86,7 +97,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="col-md-6 text-center">
-                <img src="https://www.chess.com/bundles/web/images/offline-play/standardboard.1d6f9426.png" alt="#ImgNotFound" className='mt-lg-0 mt-3' style={{ maxWidth: '500px', maxHeight: '500px', width: '100%' }} />
+                <img src={img1.src} alt="#ImgNotFound" className='mt-lg-0 mt-3' style={{ maxWidth: '500px', maxHeight: '500px', width: '100%' }} />
               </div>
             </div>
 
@@ -100,7 +111,7 @@ export default function Home() {
                 </div>
                 <div className="row mt-5">
                   <div className="col-lg-4 col-md-3 col-2">
-                    <img src="https://www.chess.com/bundles/web/images/faces/hikaru-nakamura.e1ca9267.jpg" alt="#ImgNotFound" width="100%" />
+                    <img src={img4.src} alt="#ImgNotFound" width="100%" />
                   </div>
                   <div className="col-lg-8 col-md-9 col-10" style={{ textAlign: 'left' }}>
                     <p>"Puzzles are the best way to improve pattern recognition, and no site does it better."</p>
@@ -108,7 +119,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="col-md-6 text-center">
-                <img src="https://www.chess.com/bundles/web/images/offline-play/standardboard.1d6f9426.png" alt="#ImgNotFound" className='mt-lg-0 mt-3' style={{ maxWidth: '400px', maxHeight: '400px', width: '100%' }} />
+                <img src={img2.src} alt="#ImgNotFound" className='mt-lg-0 mt-3' style={{ maxWidth: '400px', maxHeight: '400px', width: '100%' }} />
               </div>
             </div>
 
@@ -122,7 +133,7 @@ export default function Home() {
                 </div>
                 <div className="row mt-5">
                   <div className="col-lg-4 col-md-3 col-2">
-                    <img src="https://www.chess.com/bundles/web/images/faces/anna-rudolf.193d08a5.jpg" alt="#ImgNotFound" width="100%" />
+                    <img src={img5.src} alt="#ImgNotFound" width="100%" />
                   </div>
                   <div className="col-lg-8 col-md-9 col-10" style={{ textAlign: 'left' }}>
                     <p>"Chess.com lessons make it easy to learn to play, then challenge you to continue growing."</p>
@@ -130,7 +141,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="col-md-6 text-center">
-                <img src="https://www.chess.com/bundles/web/images/web/board-lessons.825946d3@2x.png" alt="#ImgNotFound" className='mt-lg-0 mt-3' style={{ maxWidth: '400px', maxHeight: '400px', width: '100%' }} />
+                <img src={img3.src} alt="#ImgNotFound" className='mt-lg-0 mt-3' style={{ maxWidth: '400px', maxHeight: '400px', width: '100%' }} />
               </div>
             </div>
 
@@ -138,16 +149,16 @@ export default function Home() {
             <h1 className='text-center text-white mt-5'><b>Follow what’s happening in Chess Today.</b></h1>
             <div className="row">
               <div className="col-md-6 mt-4">
-                <img src="https://images.chesscomfiles.com/uploads/v1/news/1234323.94a210ad.507x286o.f45ed28d6228.png" alt="#ImgNotFound" className="w-100" />
+                <img src={img6.src} alt="#ImgNotFound" className="w-100" />
               </div>
               <div className="col-md-6 mt-4">
-                <img src="https://images.chesscomfiles.com/uploads/v1/news/1234661.917724e0.507x286o.518c81fda44f.png" alt="#ImgNotFound" className="w-100" />
+                <img src={img7.src} alt="#ImgNotFound" className="w-100" />
               </div>
               <div className="col-md-6 mt-4">
-                <img src="https://images.chesscomfiles.com/uploads/v1/article/29407.9ed85da2.507x286o.04abcf90f029.jpg" alt="#ImgNotFound" className="w-100" />
+                <img src={img8.src} alt="#ImgNotFound" className="w-100" />
               </div>
               <div className="col-md-6 mt-4">
-                <img src="https://images.chesscomfiles.com/uploads/v1/video/9603.e05c5262.507x286o.0079c5872fa5.png" alt="#ImgNotFound" className="w-100" />
+                <img src={img9.src} alt="#ImgNotFound" className="w-100" />
               </div>
             </div>
 
