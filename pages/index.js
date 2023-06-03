@@ -24,8 +24,8 @@ export default function Home() {
                 <img src={logo.src} alt="#ImgNotFound" width='100px' />
               </button>
               <div class="d-flex">
-                <button type="button" class="btn mx-2" style={{ background: '#4A4846', color: 'white', fontWeight: '700' }}>Sign Up</button>
-                <button type="button" class="btn mx-2" style={{ background: '#95BB4A', color: 'white', fontWeight: '700' }}>Log In</button>
+                <button type="button" class="btn mx-sm-2 mx-1" style={{ background: '#4A4846', color: 'white', fontWeight: '700' }}>Sign Up</button>
+                <button type="button" class="btn mx-sm-2 mx-1" style={{ background: '#95BB4A', color: 'white', fontWeight: '700' }}>Log In</button>
               </div>
             </div>
           </nav>
@@ -101,7 +101,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="row mx-xl-5 mt-5 p-5" style={{ background: '#272522' }}>
+            <div className="row mx-xl-5 mt-5 p-sm-5 p-3" style={{ background: '#272522' }}>
               <div className="col-md-6 text-white">
                 <h1 className='text-center py-3'>Solve Chess Puzzles</h1>
                 <div className="text-center mb-5">
@@ -110,10 +110,10 @@ export default function Home() {
                   </button>
                 </div>
                 <div className="row mt-5">
-                  <div className="col-lg-4 col-md-3 col-2">
+                  <div className="col-lg-4 col-md-3 col-sm-2 col-3">
                     <img src={img4.src} alt="#ImgNotFound" width="100%" />
                   </div>
-                  <div className="col-lg-8 col-md-9 col-10" style={{ textAlign: 'left' }}>
+                  <div className="col-lg-8 col-md-9 col-sm-10 col-9" style={{ textAlign: 'left' }}>
                     <p>"Puzzles are the best way to improve pattern recognition, and no site does it better."</p>
                   </div>
                 </div>
@@ -123,7 +123,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="row mx-xl-5 mt-5 p-5" style={{ background: '#272522' }}>
+            <div className="row mx-xl-5 mt-5 p-sm-5 p-3" style={{ background: '#272522' }}>
               <div className="col-md-6 order-md-2 text-white px-xxl-5">
                 <h1 className='text-center py-3'>Take Chess Lessons</h1>
                 <div className="text-center mb-5">
@@ -132,10 +132,10 @@ export default function Home() {
                   </button>
                 </div>
                 <div className="row mt-5">
-                  <div className="col-lg-4 col-md-3 col-2">
+                  <div className="col-lg-4 col-md-3 col-sm-2 col-3">
                     <img src={img5.src} alt="#ImgNotFound" width="100%" />
                   </div>
-                  <div className="col-lg-8 col-md-9 col-10" style={{ textAlign: 'left' }}>
+                  <div className="col-lg-8 col-md-9 col-sm-10 col-9" style={{ textAlign: 'left' }}>
                     <p>"Chess.com lessons make it easy to learn to play, then challenge you to continue growing."</p>
                   </div>
                 </div>
@@ -169,40 +169,40 @@ export default function Home() {
             </div>
 
             <div class="text-center">
-              <Link href="https://support.chess.com" className={`mx-2 ${styles.footerOptions}`}>
+              <Link href="#" className={`mx-2 ${styles.footerOptions}`}>
                 Help
               </Link>
-              <Link href="https://www.chess.com/terms" className={`mx-2 ${styles.footerOptions}`}>
+              <Link href="#" className={`mx-2 ${styles.footerOptions}`}>
                 Chess Terms
               </Link>
-              <Link href="https://www.chess.com/about" className={`mx-2 ${styles.footerOptions}`}>
+              <Link href="#" className={`mx-2 ${styles.footerOptions}`}>
                 About
               </Link>
-              <Link href="https://www.chess.com/jobs" target="_blank" className={`mx-2 ${styles.footerOptions}`}>
+              <Link href="#" className={`mx-2 ${styles.footerOptions}`}>
                 Jobs
               </Link>
-              <Link href="https://www.chess.com/developers" target="_blank" className={`mx-2 ${styles.footerOptions}`}>
+              <Link href="#" className={`mx-2 ${styles.footerOptions}`}>
                 Developers
               </Link>
-              <Link href="https://www.chess.com/legal/user-agreement" target="_blank" className={`mx-2 ${styles.footerOptions}`}>
+              <Link href="#" className={`mx-2 ${styles.footerOptions}`}>
                 User Agreement
               </Link>
-              <Link href="https://www.chess.com/legal/privacy" target="_blank" className={`mx-2 ${styles.footerOptions}`}>
+              <Link href="#" className={`mx-2 ${styles.footerOptions}`}>
                 Privacy
               </Link>
-              <Link href="https://www.chess.com/legal/fair-play" target="_blank" className={`mx-2 ${styles.footerOptions}`}>
+              <Link href="#" className={`mx-2 ${styles.footerOptions}`}>
                 Fair Play
               </Link>
-              <Link href="https://www.chess.com/legal/community" target="_blank" className={`mx-2 ${styles.footerOptions}`}>
+              <Link href="#" className={`mx-2 ${styles.footerOptions}`}>
                 Community
               </Link>
-              <Link href="https://www.chess.com/partners" target="_blank" className={`mx-2 ${styles.footerOptions}`}>
+              <Link href="#" className={`mx-2 ${styles.footerOptions}`}>
                 Partners
               </Link>
-              <Link href="https://www.chess.com/legal/compliance" target="_blank" className={`mx-2 ${styles.footerOptions}`}>
+              <Link href="#" className={`mx-2 ${styles.footerOptions}`}>
                 Compliance
               </Link>
-              <Link href="https://www.chess.com/" className={`mx-2 ${styles.footerOptions}`}>
+              <Link href="#" className={`mx-2 ${styles.footerOptions}`}>
                 Chess.com © 2023
               </Link>
 
