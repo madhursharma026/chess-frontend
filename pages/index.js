@@ -110,7 +110,7 @@ export default function Home() {
                   </button>
                 </div>
                 <div className="row mt-5">
-                  <div className="col-lg-4 col-md-3 col-sm-2 col-3">
+                  <div className="col-lg-4 col-md-3 col-sm-2 col-3" style={{margin: 'auto'}}>
                     <img src={img4.src} alt="#ImgNotFound" width="100%" />
                   </div>
                   <div className="col-lg-8 col-md-9 col-sm-10 col-9" style={{ textAlign: 'left' }}>
@@ -132,7 +132,7 @@ export default function Home() {
                   </button>
                 </div>
                 <div className="row mt-5">
-                  <div className="col-lg-4 col-md-3 col-sm-2 col-3">
+                  <div className="col-lg-4 col-md-3 col-sm-2 col-3" style={{margin: 'auto'}}>
                     <img src={img5.src} alt="#ImgNotFound" width="100%" />
                   </div>
                   <div className="col-lg-8 col-md-9 col-sm-10 col-9" style={{ textAlign: 'left' }}>
