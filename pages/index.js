@@ -1,7 +1,6 @@
-import Link from 'next/link'
-import styles from '@/styles/Home.module.css'
+import Link from 'next/link';
+import { useState } from 'react';
 import logo from './media/logo.png';
-import logo2 from './media/logo-2.png';
 import img1 from './media/img-1.png';
 import img2 from './media/img-2.png';
 import img3 from './media/img-3.png';
@@ -11,15 +10,24 @@ import img6 from './media/img-6.png';
 import img7 from './media/img-7.png';
 import img8 from './media/img-8.jpg';
 import img9 from './media/img-9.png';
+import logo2 from './media/logo-2.png';
+import Button from 'react-bootstrap/Button';
+import styles from '@/styles/Home.module.css';
+import Offcanvas from 'react-bootstrap/Offcanvas';
 
 export default function Home() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <>
       <div className={styles.body}>
         <div className={styles.showAfterLGScrn}>
           <nav class="navbar" style={{ background: 'transparent' }} data-bs-theme="dark">
             <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" style={{ border: '0' }}>
+              <button class="navbar-toggler" onClick={handleShow} type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" style={{ border: '0' }}>
                 <span class="navbar-toggler-icon"></span>
                 <img src={logo.src} alt="#ImgNotFound" width='100px' />
               </button>
@@ -110,7 +118,7 @@ export default function Home() {
                   </button>
                 </div>
                 <div className="row mt-5">
-                  <div className="col-lg-4 col-md-3 col-sm-2 col-3" style={{margin: 'auto'}}>
+                  <div className="col-lg-4 col-md-3 col-sm-2 col-3" style={{ margin: 'auto' }}>
                     <img src={img4.src} alt="#ImgNotFound" width="100%" />
                   </div>
                   <div className="col-lg-8 col-md-9 col-sm-10 col-9" style={{ textAlign: 'left' }}>
@@ -132,7 +140,7 @@ export default function Home() {
                   </button>
                 </div>
                 <div className="row mt-5">
-                  <div className="col-lg-4 col-md-3 col-sm-2 col-3" style={{margin: 'auto'}}>
+                  <div className="col-lg-4 col-md-3 col-sm-2 col-3" style={{ margin: 'auto' }}>
                     <img src={img5.src} alt="#ImgNotFound" width="100%" />
                   </div>
                   <div className="col-lg-8 col-md-9 col-sm-10 col-9" style={{ textAlign: 'left' }}>
@@ -217,6 +225,43 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+
+      <Offcanvas show={show} onHide={handleClose} style={{ width: '180px' }}>
+        <Offcanvas.Header>
+          <Offcanvas.Title></Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body className={styles.offcanvasLeftSidebar}>
+          <div>
+            <div className="">
+              {/* <img src={logo2.src} alt="#ImgNotFound" width='40px' height='40px' className={styles.showAfterXLScrn} /> */}
+              {/* <img src={logo.src} alt="#ImgNotFound" width='100%' className={styles.hideAfterXLScrn} /> */}
+              <img src={logo.src} alt="#ImgNotFound" width='100%' />
+            </div>
+            <ul class="list-group">
+              <li class="list-group-item leftSideOptions px-xl-3 p-2" style={{ background: '#272522', color: 'white', border: '0', fontWeight: '700', fontSize: '20px' }}>♟️ <span className={`${styles.optionsText}`}>Play</span></li>
+              <li class="list-group-item leftSideOptions px-xl-3 p-2" style={{ background: '#272522', color: 'white', border: '0', fontWeight: '700', fontSize: '20px' }}>🧩 <span className={`${styles.optionsText}`}>Puzzles</span></li>
+              <li class="list-group-item leftSideOptions px-xl-3 p-2" style={{ background: '#272522', color: 'white', border: '0', fontWeight: '700', fontSize: '20px' }}>🎓 <span className={`${styles.optionsText}`}>Learn</span></li>
+              <li class="list-group-item leftSideOptions px-xl-3 p-2" style={{ background: '#272522', color: 'white', border: '0', fontWeight: '700', fontSize: '20px' }}>📊 <span className={`${styles.optionsText}`}>Watch</span></li>
+              <li class="list-group-item leftSideOptions px-xl-3 p-2" style={{ background: '#272522', color: 'white', border: '0', fontWeight: '700', fontSize: '20px' }}>📰 <span className={`${styles.optionsText}`}>News</span></li>
+              <li class="list-group-item leftSideOptions px-xl-3 p-2" style={{ background: '#272522', color: 'white', border: '0', fontWeight: '700', fontSize: '20px' }}>👨‍👨‍👦 <span className={`${styles.optionsText}`}>Social</span></li>
+              <li class="list-group-item leftSideOptions px-xl-3 p-2" style={{ background: '#272522', color: 'white', border: '0', fontWeight: '700', fontSize: '20px' }}>📂 <span className={`${styles.optionsText}`}>More</span></li>
+              {/* <div className={styles.hideAfterXLScrn}> */}
+              <li class="list-group-item leftSideOptions px-xl-3 p-2" style={{ background: '#272522', border: '0' }}><input type="text" placeholder='Search' className='p-1' style={{ width: '100%', background: '#3D3B39', color: 'white', borderRadius: '5px', border: '1px solid gray' }} /></li>
+              <li class="list-group-item leftSideOptions px-xl-3 p-2" style={{ background: '#272522', border: '0' }}><button type="button" class="btn w-100" style={{ background: '#4A4846', color: 'white', fontWeight: '700' }}>Sign Up</button></li>
+              <li class="list-group-item leftSideOptions px-xl-3 p-2" style={{ background: '#272522', border: '0' }}><button type="button" class="btn w-100" style={{ background: '#95BB4A', color: 'white', fontWeight: '700' }}>Log In</button></li>
+              {/* </div> */}
+              {/* <div className={styles.showAfterXLScrn}>
+                <li class="list-group-item leftSideOptions px-xl-3 p-2" style={{ background: '#272522', border: '0' }}>🔎</li>
+                <li class="list-group-item leftSideOptions px-xl-3 p-2" style={{ background: '#272522', border: '0' }}><button type="button" class="btn w-100 p-1" style={{ background: '#4A4846', color: 'white', fontWeight: '700' }}>🔐</button></li>
+                <li class="list-group-item leftSideOptions px-xl-3 p-2" style={{ background: '#272522', border: '0' }}><button type="button" class="btn w-100 p-1" style={{ background: '#95BB4A', color: 'white', fontWeight: '700' }}>🔑</button></li>
+              </div> */}
+              <p className='text-white px-2'>🌍 English</p>
+              <p className='text-white px-2'>❓ Help</p>
+            </ul>
+          </div>
+        </Offcanvas.Body>
+      </Offcanvas>
     </>
   )
 }
