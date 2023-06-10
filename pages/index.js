@@ -43,7 +43,7 @@ export default function Home2() {
             <img src={logo.src} alt="#ImgNotFound" width='100%' className={styles.hideAfterXLScrn} />
           </div>
           <ul class="list-group">
-            <li class="list-group-item leftSideOptions px-xl-3 pb-2 pt-0" style={{ background: '#272522', color: 'white', border: '0', fontWeight: '700', fontSize: '20px' }}>♟️ <span className={`${styles.hideAfterXLScrn} ${styles.optionsText}`}>Play</span></li>
+            <li class="list-group-item leftSideOptions px-xl-3 pb-2 pt-xl-0 pt-2 px-xl-0 p-2" style={{ background: '#272522', color: 'white', border: '0', fontWeight: '700', fontSize: '20px' }}>♟️ <span className={`${styles.hideAfterXLScrn} ${styles.optionsText}`}>Play</span></li>
             <li class="list-group-item leftSideOptions px-xl-3 p-2" style={{ background: '#272522', color: 'white', border: '0', fontWeight: '700', fontSize: '20px' }}>🧩 <span className={`${styles.hideAfterXLScrn} ${styles.optionsText}`}>Puzzles</span></li>
             <li class="list-group-item leftSideOptions px-xl-3 p-2" style={{ background: '#272522', color: 'white', border: '0', fontWeight: '700', fontSize: '20px' }}>🎓 <span className={`${styles.hideAfterXLScrn} ${styles.optionsText}`}>Learn</span></li>
             <li class="list-group-item leftSideOptions px-xl-3 p-2" style={{ background: '#272522', color: 'white', border: '0', fontWeight: '700', fontSize: '20px' }}>📊 <span className={`${styles.hideAfterXLScrn} ${styles.optionsText}`}>Watch</span></li>
@@ -171,7 +171,7 @@ export default function Home2() {
 
 
             <h1 className='text-center text-white mt-5'><b>Follow what’s happening in Chess Today.</b></h1>
-            <div className="row">
+            <div className="row mx-xxl-5 mx-xl-4">
               <div className="col-sm-6 mt-4">
                 <img src={img6.src} alt="#ImgNotFound" className="w-100" />
               </div>
