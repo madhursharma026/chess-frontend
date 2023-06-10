@@ -187,7 +187,7 @@ export default function Home2() {
             </div>
 
             <div className="text-center mt-5 mb-3">
-              <button type="button" class="btn mt-3" style={{ background: '#95BB4A', color: 'white', fontWeight: '700', fontSize: '24px' }}>
+              <button type="button" class={`btn mt-3 py-2 px-4`} style={{ background: '#7fa650', color: 'white', fontWeight: '700', borderBottom: '5px solid rgba(0,0,0,.2)', fontSize: '22px' }}>
                 Chess Today
               </button>
             </div>
